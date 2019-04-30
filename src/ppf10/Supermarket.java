@@ -18,19 +18,22 @@ public class Supermarket extends Company implements MarketService {
         this.potatoesPrice = potatoesPrice;
     }
 
+    @Override
     public double getPotatoesPrice() {
         return potatoesPrice;
     }
 
+    @Override
     public void setPotatoesPrice(double potatoesPrice) {
         this.potatoesPrice = potatoesPrice;
     }
 
+    @Override
     public double getMarketTotal(double kilos) {
-        return TotalPrice(kilos);
+        return Total(kilos);
     }
 
-    public double TotalPrice(double kilos) {
+    public double Total(double kilos) {
         double total = kilos * getPotatoesPrice();
         return total;
     }

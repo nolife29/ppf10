@@ -15,14 +15,17 @@ public class LargeGasStation extends GasStation implements CoffeeService{
         super(gasprice, name, valNumber);
     }
 
+    @Override
     public double getCoffeePrice() {
         return getGasPrice();
     }
 
+    @Override
     public void setCoffeePrice(double p) {
         setGasPrice(p);
     }
 
+    @Override
     public double getCoffeeTotal( int coffees){
         return getGasTotal(coffees);
     }

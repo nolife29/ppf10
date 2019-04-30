@@ -9,11 +9,12 @@ package ppf10;
  *
  * @author Ivo Martins
  */
-public interface CoffeeService{
+public interface CreditService {
 
-    public double getCoffeePrice();
+    public double getAnnualRate();
 
-    public void setCoffeePrice(double p);
+    public void setAnnualRate(double r);
 
-    public double getCoffeeTotal(int coffees);
+    public double computeMonthlyPayment(double ammount, int months);
+
 }

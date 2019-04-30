@@ -9,11 +9,6 @@ package ppf10;
  *
  * @author Ivo Martins
  */
-public interface CoffeeService{
+public interface HipermarketService extends MarketService, CreditService, CoffeeService, GasService {
 
-    public double getCoffeePrice();
-
-    public void setCoffeePrice(double p);
-
-    public double getCoffeeTotal(int coffees);
 }

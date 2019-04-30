@@ -11,7 +11,6 @@ package ppf10;
  */
 public class GasStation extends Company implements GasService {
 
-    
     private double gasprice;
 
     public GasStation(double gasprice, String name, int valNumber) {
@@ -20,27 +19,30 @@ public class GasStation extends Company implements GasService {
     }
 
     /**
-     * 
+     *
      * @return retorna o valor do preço do gás
      */
+    @Override
     public double getGasPrice() {
         return this.gasprice;
     }
 
     /**
-     * 
+     *
      * @param p novo valor do preço do gás
      */
+    @Override
     public void setGasPrice(double p) {
         this.gasprice = p;
     }
 
+    @Override
     public double getGasTotal(double litros) {
         return totalGas(litros);
     }
 
     /**
-     * 
+     *
      * @param litros número de litros requeridos
      * @return retorna o preço dos litros de acordo com o preço pré definido
      */

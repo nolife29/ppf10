@@ -12,27 +12,43 @@ package ppf10;
 public class Company{
 
     private String name;
-    private int valNumber;
+    private int vatNumber;
 
     public Company(String name, int valNumber) {
         this.name = name;
-        this.valNumber = valNumber;
+        this.vatNumber = valNumber;
     }
 
+    /**
+     * 
+     * @return retorna a variavel name
+     */
     public String getName() {
         return name;
     }
 
-    public int getValNumber() {
-        return valNumber;
+    /**
+     * 
+     * @return retorna a variavel vatNumber
+     */
+    public int getVatNumber() {
+        return vatNumber;
     }
 
+    /**
+     * 
+     * @param name nome da empresa
+     */
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setValNumber(int valNumber) {
-        this.valNumber = valNumber;
+    /**
+     * 
+     * @param vatNumber numero de contribuinte
+     */
+    public void setVatNumber(int vatNumber) {
+        this.vatNumber = vatNumber;
     }
 
 }
